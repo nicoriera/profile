@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap');
+
+body {
+  display: flex;
+  line-height: 20px;
+  background-color: beige;
+  margin-top: 100px;
+}
+
+.container {
+  width: 840px;
+  padding: 25px 40px;
+  margin: 30px auto;
+  box-shadow: 7px 2px 16px -4px rgba(59,57,59,0.39);
+  border-radius: 10px;
+  background-color: rgb(250,250,250);
+}
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: (10,10,10);
+}
+
+.nav-bar-text h2 {
+  margin-left: 20px;
+  color: rgb(121, 120, 120);
+}
+
+p, a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.img-profil {
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid rgb(154, 153, 153);
+}
+
+.img-profil:hover {
+  height: 95px;
+  border-radius: 50%;
+  border-top: 2px solid rgb(255, 187, 127);
+  border-bottom: 2px solid  rgb(127, 197, 255);
+  border-left: 2px solid rgb(255, 187, 127);
+  border-right:2px solid rgb(127, 197, 255);
+}
+
+.nav-bar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid  rgb(154, 153, 153);
+}
+
+.nav-bar-text {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-img {
+  display: flex;
+}
+
+.presentation {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation-text {
+  line-height: 25px;
+  text-align: justify;
+}
+
+.bloc-follow-me {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+li {
+  display: inline;
+  margin: 0 20px;
+}
+
+i {
+  font-size: 20px;
+  color: black;
+  animation: 3s ease-in 1s 2 reverse both paused slidein;
+}
+i:hover {
+  color:  rgb(127, 197, 255);
+  animation: 3s ease-in 1s 2 reverse both paused slidein;
+}
+.btn-orange {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 187, 127);
+  color: black;
+  box-shadow: 7px 2px 16px -4px rgba(59,57,59,0.39);
+}
+
+.btn-orange:hover {
+  background-color: rgb(127, 197, 255);
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 5px;
+}
+
+/* ## MEDIA QUERIES ## */
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+
+  h1 {
+    font-size:  20px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .nav-bar {
+    height: 180px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bloc-follow-me {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .btn-orange {
+      margin-top: 20px;
+    }
+
+
+
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+
+}
